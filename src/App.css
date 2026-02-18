@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lora:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;600;700&display=swap');
+
+:root {
+  --primary: #c0392b;
+  --primary-dark: #96281b;
+  --secondary: #f39c12;
+  --dark: #1a1a1a;
+  --light: #f9f6f2;
+  --text: #333;
+  --muted: #777;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { 
+  font-family: 'Lora', serif; 
+  background-color: var(--light); 
+  color: var(--text);
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.3px;
+}
+
+h1, h2, h3, h4, h5 { 
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+a { text-decoration: none; color: inherit; }
+
+.btn-primary { background-color: var(--primary) !important; border-color: var(--primary) !important; }
+.btn-primary:hover { background-color: var(--primary-dark) !important; border-color: var(--primary-dark) !important; }
+.btn-outline-primary { color: var(--primary) !important; border-color: var(--primary) !important; }
+.btn-outline-primary:hover { background-color: var(--primary) !important; color: #fff !important; }
+.text-primary { color: var(--primary) !important; }
+
+.section { padding: 80px 0; }
+.section-title { 
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem; 
+  font-weight: 700; 
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+.section-title-white { color: #fff; }
+.section-label { 
+  font-family: 'Cormorant Garamond', serif;
+  color: #f39c12; 
+  font-size: 0.95rem; 
+  letter-spacing: 3px; 
+  text-transform: uppercase; 
+  font-weight: 600;
+}
+.section-subtitle { 
+  font-family: 'Lora', serif;
+  color: var(--muted); 
+  font-size: 1.1rem; 
+  margin-bottom: 3rem;
+  font-weight: 400;
+  line-height: 1.8;
+}
+.divider { width: 60px; height: 3px; background-color: var(--primary); margin: 1rem auto 2rem; }
+
+/* Tablet */
+@media (max-width: 992px) {
+  .section { padding: 60px 0; }
+  .section-title { font-size: 2rem; }
+  .navbar-collapse a { padding: 10px 0 !important; margin-left: 0 !important; border-bottom: 1px solid #2a2a2a; display: block; }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .section { padding: 40px 0; }
+  .section-title { font-size: 1.7rem; }
+  .section-subtitle { font-size: 1rem; margin-bottom: 2rem; }
+  .hero-buttons { flex-direction: column !important; gap: 12px !important; }
+  .hero-buttons .btn { width: 100%; text-align: center; }
+  .reservation-info { margin-top: 1.5rem; }
+  footer .col-md-4 { margin-bottom: 2rem; text-align: center; }
+  .contact-form-box { padding: 1.5rem !important; }
+  .reservation-form-box { padding: 1.5rem !important; }
+}
+
+/* Small Mobile */
+@media (max-width: 576px) {
+  .section { padding: 32px 0; }
+  .section-title { font-size: 1.4rem; }
+  .menu-filters .btn { padding: 8px 16px !important; font-size: 0.85rem; }
+  .menu-card-img { height: 160px !important; }
+  .btn-lg { width: 100% !important; font-size: 1rem; }
+  footer { text-align: center; }
+  iframe { height: 180px !important; }
+}
